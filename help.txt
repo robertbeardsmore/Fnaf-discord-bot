@@ -1,0 +1,23 @@
+List of available commands:
+!hello - Hello World!
+!mouse - display mouse position
+!start - presses the new game button
+!continue - presses the continue button
+!left - looks left
+!right - looks right
+!rdoor - presses the right door button
+!ldoor - presses the left door button
+!rlight - activates the right door light
+!llight - activates the left door light
+!camera - toggles the camera
+!1a - switches to camera 1a
+!1b - switches to camera 1b
+!1c - switches to camera 1c
+!2a - switches to camera 2a
+!2b - switches to camera 2b
+!3 - switches to camera 3
+!4a - switches to camera 4a
+!4b - switches to camera 4b
+!5 - switches to camera 5
+!6 - switches to camera 6
+!7 - switches to camera 7
