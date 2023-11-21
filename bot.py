@@ -74,47 +74,47 @@ async def command(ctx):
 
 @bot.command(name="1a")
 async def command(ctx):
-    fnafbot.one_a()
+    fnafbot.press("1a")
 
 @bot.command(name="1b")
 async def command(ctx):
-    fnafbot.one_b()
+    fnafbot.press("1b")
 
 @bot.command(name="1c")
 async def command(ctx):
-    fnafbot.one_c()
+    fnafbot.press("1c")
 
 @bot.command(name="2a")
 async def command(ctx):
-    fnafbot.two_a()
+    fnafbot.press("2a")
 
 @bot.command(name="2b")
 async def command(ctx):
-    fnafbot.two_b()
+    fnafbot.press("2b")
 
 @bot.command(name="3")
 async def command(ctx):
-    fnafbot.three()
+    fnafbot.press("3")
 
 @bot.command(name="4a")
 async def command(ctx):
-    fnafbot.four_a()
+    fnafbot.press("4a")
 
 @bot.command(name="4b")
 async def command(ctx):
-    fnafbot.four_b()
+    fnafbot.press("4b")
 
 @bot.command(name="5")
 async def command(ctx):
-    fnafbot.five()
+    fnafbot.press("5")
 
 @bot.command(name="6")
 async def command(ctx):
-    fnafbot.six()
+    fnafbot.press("6")
 
 @bot.command(name="7")
 async def command(ctx):
-    fnafbot.seven()
+    fnafbot.press("7")
 
 
 bot.run(TOKEN)

@@ -94,35 +94,5 @@ def right_light():
     time.sleep(LIGHT_DELAY)
     click(positions["right light"])
 
-def one_a():
-    click(positions["1a"])
-
-def one_b():
-    click(positions["1b"])
-
-def one_c():
-    click(positions["1c"])
-
-def two_a():
-    click(positions["2a"])
-
-def two_b():
-    click(positions["2b"])
-
-def three():
-    click(positions["3"])
-
-def four_a():
-    click(positions["4a"])
-
-def four_b():
-    click(positions["4b"])
-
-def five():
-    click(positions["5"])
-
-def six():
-    click(positions["6"])
-
-def seven():
-    click(positions["7"])
+def press(loc):
+    click(positions[loc])
