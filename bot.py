@@ -18,6 +18,8 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f'{bot.user.name} has connected to Discord!') 
+    fnafbot.start()
+    print(f'{bot.user.name} is ready to go')
 
 @bot.command(name='hello')
 async def hello(ctx):
@@ -44,31 +46,31 @@ async def command(ctx):
 async def command(ctx):
     fnafbot.continue_game()
 
-@bot.command(name="left")
+@bot.command(name="l")
 async def command(ctx):
     fnafbot.look_left()
 
-@bot.command(name="right")
+@bot.command(name="r")
 async def command(ctx):
     fnafbot.look_right()
 
-@bot.command(name="ldoor")
+@bot.command(name="ld")
 async def command(ctx):
     fnafbot.left_door()
 
-@bot.command(name="rdoor")
+@bot.command(name="rd")
 async def command(ctx):
     fnafbot.right_door()
 
-@bot.command(name="llight")
+@bot.command(name="ll")
 async def command(ctx):
     fnafbot.left_light()
 
-@bot.command(name="rlight")
+@bot.command(name="rl")
 async def command(ctx):
     fnafbot.right_light()
 
-@bot.command(name="camera")
+@bot.command(name="c")
 async def command(ctx):
     fnafbot.toggleCam()
 
@@ -115,6 +117,10 @@ async def command(ctx):
 @bot.command(name="7")
 async def command(ctx):
     fnafbot.press("7")
+
+@bot.command(name="bind")
+async def command(ctx, command):
+    fnafbot.bind(command)
 
 
 bot.run(TOKEN)

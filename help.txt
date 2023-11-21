@@ -3,13 +3,13 @@ List of available commands:
 !mouse - display mouse position
 !start - presses the new game button
 !continue - presses the continue button
-!left - looks left
-!right - looks right
-!rdoor - presses the right door button
-!ldoor - presses the left door button
-!rlight - activates the right door light
-!llight - activates the left door light
-!camera - toggles the camera
+!l - looks left
+!r - looks right
+!rd - presses the right door button
+!ld - presses the left door button
+!rl - activates the right door light
+!ll - activates the left door light
+!c - toggles the camera
 !1a - switches to camera 1a
 !1b - switches to camera 1b
 !1c - switches to camera 1c

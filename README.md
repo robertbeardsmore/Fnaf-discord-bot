@@ -20,6 +20,11 @@ DISCORD_GUILD=your-server-name
 This is what will allow the bot to connect to your server.
 
 ## Notes
-The mouse positions were made using my specific machine, I have not yet added functionality to change this with the bot yet so you will need to change this to work on your machine. 
+The mouse positions were made using my specific machine, ~~I have not yet added functionality to change this with the bot yet so you will need to change this to work on your machine.~~  
+To change them use  
+
+!bind *command*  
+
+This will automatically set the command to the current mouse position
 
 Also Fnaf is funny with dual monitor set ups, so the person hosting the bot will need to use a different machine to use it while the game is running.

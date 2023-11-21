@@ -1,11 +1,13 @@
 import pyautogui
 import time
+import FileHandler as fh
 
 pyautogui.FAILSAFE = False
 
 LONGER_DELAY = 0.32
 LIGHT_DELAY = 0.4
 DELAY = 0.17
+filehandler = fh.FileHandler()
 
 positions = {
     "new game" : (231, 422),
@@ -30,6 +32,12 @@ positions = {
     "6" : (1181, 570),
     "7" : (1199, 434)
 }
+
+
+
+def start():
+    global positions
+    positions = filehandler.read()
 
 def start_game():
     pyautogui.moveTo(292, 637)
@@ -84,15 +92,16 @@ def left_light():
     move(positions["left light"])
     time.sleep(LONGER_DELAY)
     click(positions["left light"])
-    time.sleep(LIGHT_DELAY)
-    click(positions["left light"])
 
 def right_light():
     move(positions["right light"])
     time.sleep(LONGER_DELAY)
     click(positions["right light"])
-    time.sleep(LIGHT_DELAY)
-    click(positions["right light"])
 
 def press(loc):
     click(positions[loc])
+
+def bind(command):
+    if command in positions:
+        positions[command] = pyautogui.position()
+    filehandler.write()
